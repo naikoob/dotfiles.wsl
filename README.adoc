@@ -1,0 +1,22 @@
+Config (dot) files managed using GNU stow, inspired by https://github.com/xero/dotfiles
+
+Uses powerline and zsh in Windows Subsystem for Linux (Ubuntu).
+
+== Pre-reqs
+zsh, stow, powerline and powerline git-status. Use the version provided by your Linux distro, otherwise install using pip:
+----
+sudo apt install zsh stow
+sudo apt install powerline-status powerline-gitstatus
+# optional, if using powerline with tmux and vim
+sudo apt install tmux vim-nox
+----
+
+== Installation
+Clone to directory ~/.dotfiles and use GNU stow to install.
+For example
+----
+$ cd ~
+$ git clone --recursive https://github.com/naikoob/dotfiles.wsl.git .dotfiles
+$ cd ~/.dotfiles
+$ for dir in *; do [ -d $dir ] && stow $dir; done;
+----
