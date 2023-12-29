@@ -18,7 +18,8 @@ $ sudo usermod -s /usr/bin/zsh <replace-with-wsl-userid>
 
 == Installation
 Clone to directory ~/.dotfiles and use GNU stow to install.
-For example
+For example:
+
 [source,bash]
 ----
 $ cd ~
