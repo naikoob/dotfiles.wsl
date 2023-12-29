@@ -3,16 +3,17 @@ Config (dot) files for Windows Subsystem for Linux (Ubuntu) managed using GNU st
 Uses powerline and zsh.
 
 == Pre-reqs
-zsh, stow, powerline and powerline git-status. Use the version provided by your Linux distro, otherwise install using pip:
+zsh, stow, powerline and powerline git-status. Use the version provided by WSL(Ubuntu):
+
 [source,bash]
 ----
-sudo apt install zsh stow
-sudo apt install powerline-status powerline-gitstatus
+$ sudo apt install zsh stow
+$ sudo apt install powerline-status powerline-gitstatus
 # optional, if using powerline with tmux and vim
-sudo apt install tmux vim-nox
+$ sudo apt install tmux vim-nox
 
 # switch user to zsh
-sudo usermod -s /usr/bin/zsh <replace-with-wsl-userid> 
+$ sudo usermod -s /usr/bin/zsh <replace-with-wsl-userid> 
 ----
 
 == Installation
